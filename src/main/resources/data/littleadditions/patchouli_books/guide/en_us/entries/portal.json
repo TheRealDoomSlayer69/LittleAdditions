@@ -1,0 +1,58 @@
+{
+  "name": "The Portal",
+  "icon": "littleadditions:stable_crying_obsidian",
+  "category": "littleadditions:world",
+  "pages": [
+    {
+      "type": "patchouli:multiblock",
+      "name": "Sky Portal.",
+      "text": "the main way to get you to the sky dimension, this portal is constructed like a normal nether portal, except with frames made from Stable Crying Obsidian",
+      "multiblock": {
+        "pattern": [
+          [ " SS " ],
+          [ "SPPS" ],
+          [ "SPPS" ],
+          [ "SPPS" ],
+          [ " Ss " ]
+        ],
+        "mapping": {
+          " ": "ANY",
+          "s": "littleadditions:stable_crying_obsidian",
+          "S": "littleadditions:stable_crying_obsidian",
+          "P": "AIR"
+        },
+        "symmetrical": true,
+        "offset"     : [0, 0, 0],
+        "view_offset": [0, 0, 0]
+      }
+    }, {
+      "type": "patchouli:spotlight",
+      "text": "The contact of these two materials on the portal frames, is enough to take you to a lush paradise.",
+      "item": "littleadditions:gold_and_ruby"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "The portal's ready!",
+      "text": "After igniting the frames, you are ready to ascend!",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          [ " SS " ],
+          [ "SPPS" ],
+          [ "SPPS" ],
+          [ "SPPS" ],
+          [ " Ss " ]
+        ],
+        "mapping": {
+          " ": "ANY",
+          "s": "littleadditions:stable_crying_obsidian",
+          "S": "littleadditions:stable_crying_obsidian",
+          "P": "littleadditions:sky_dimension_portal[axis=z]"
+        },
+        "symmetrical": true,
+        "offset"     : [0, 0, 0],
+        "view_offset": [0, 0, 0]
+      }
+    }
+  ]
+}

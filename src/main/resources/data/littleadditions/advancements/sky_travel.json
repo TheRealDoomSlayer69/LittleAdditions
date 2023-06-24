@@ -1,0 +1,22 @@
+{
+  "display": {
+    "icon": {
+      "item": "littleadditions:stable_crying_obsidian"
+    },
+    "title": "Ascending",
+    "description": "Ascend to the sky dimension",
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "minecraft:adventure/adventuring_time",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "littleadditions:sky_dimension"
+      }
+    }
+  }
+}

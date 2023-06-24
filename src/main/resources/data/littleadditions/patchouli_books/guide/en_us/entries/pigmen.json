@@ -1,0 +1,23 @@
+{
+  "name": "Pigmen",
+  "icon": "littleadditions:zombie_pigman_spawn_egg",
+  "category": "littleadditions:entities",
+  "pages": [
+    {
+    "type": "patchouli:entity",
+    "entity": "littleadditions:pigman",
+      "name": "Pigman",
+      "text": "Along with the piglins, there are also pigmen, Intelligent humanoid pigs which are also formidable warriors."
+     },
+    {
+      "type": "patchouli:text",
+      "text": "Pigmen primarily dwell in the sky dimension, and they also have established a small nomadic population in the overworld, primarily in caves."
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "littleadditions:zombie_pigman",
+      "name": "Zombie Pigman",
+      "text": "The zombified version of the pigman, it lives in all the nether biomes."
+    }
+  ]
+}

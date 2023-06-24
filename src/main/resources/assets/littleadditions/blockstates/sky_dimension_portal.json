@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "axis=z": { "model": "littleadditions:block/sky_dimension_portal_ew" },
+    "axis=x": { "model": "littleadditions:block/sky_dimension_portal_ns" }
+  }
+}

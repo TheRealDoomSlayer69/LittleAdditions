@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  #",
+    "#W#",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "littleadditions:ruby"
+    },
+    "W": {
+      "item": "minecraft:white_wool"
+    }
+  },
+  "result": {
+    "item": "littleadditions:ruby_horse_armor",
+    "count": 1
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "littleadditions:nether_iron_ore",
+    "littleadditions:end_iron_ore",
+    "littleadditions:nether_copper_ore",
+    "littleadditions:end_copper_ore"
+  ]
+}

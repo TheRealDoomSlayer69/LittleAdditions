@@ -1,0 +1,47 @@
+{
+  "parent": "minecraft:adventure/trade",
+  "display": {
+    "icon": {
+      "item": "littleadditions:emerald_chestplate",
+      "nbt": "{Damage:0}"
+    },
+    "title": "Stonks",
+    "description": "Obtain an emerald set of armor, and let it do its magic.",
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "rewards": {
+    "experience": 100
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "littleadditions:emerald_helmet"
+            ]
+          },
+          {
+            "items": [
+              "littleadditions:emerald_chestplate"
+            ]
+          },
+          {
+            "items": [
+              "littleadditions:emerald_leggings"
+            ]
+          },
+          {
+            "items": [
+              "littleadditions:emerald_boots"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

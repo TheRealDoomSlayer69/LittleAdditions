@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "littleadditions:block/nether_redstone_ore" }
+  }
+}

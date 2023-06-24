@@ -1,0 +1,22 @@
+{
+  "name": "Ruby",
+  "icon": "littleadditions:ruby",
+  "category": "littleadditions:materials",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "littleadditions:ruby",
+      "text": "Ruby is a great material, light and strong, it has applications on every field from farming to weapons and is mostly favorable by pigmen."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "littleadditions:ruby_block",
+      "text": "The block form of ruby, the ruby block provides a great building block, as well as a storage of rubies."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "littleadditions:ruby_block_recipe",
+      "recipe2": "littleadditions:ruby_from_block_recipe"
+    }
+  ]
+}

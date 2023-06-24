@@ -1,0 +1,19 @@
+{
+  "replace": false,
+  "values": [
+    "littleadditions:ruby_block",
+    "littleadditions:ruby_ore",
+    "littleadditions:deepslate_ruby_ore",
+    "littleadditions:nether_ruby_ore",
+    "littleadditions:end_ruby_ore",
+    "littleadditions:nether_diamond_ore",
+    "littleadditions:end_diamond_ore",
+    "littleadditions:nether_lapis_ore",
+    "littleadditions:end_lapis_ore",
+    "littleadditions:nether_emerald_ore",
+    "littleadditions:end_emerald_ore",
+    "littleadditions:nether_redstone_ore",
+    "littleadditions:end_redstone_ore",
+    "littleadditions:end_gold_ore"
+  ]
+}
