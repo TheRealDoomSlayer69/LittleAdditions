@@ -2,12 +2,12 @@
   "type": "minecraft:village",
 
   "config": {
-    "start_pool": "littleadditions:sky_portal_ruined/start_pool",
+    "start_pool": "littleadditions:tent/savannah/start_pool",
 
     "size": 2
   },
 
-  "biomes": "#littleadditions:has_structure/sky_portal_ruined",
+  "biomes": "#littleadditions:has_structure/tent_savannah",
 
   "adapt_noise": true,
 
@@ -16,7 +16,7 @@
       "bounding_box": "piece",
       "spawns": [
         {
-          "type": "littleadditions:pigman",
+          "type": "littleadditions:human",
           "weight": 1,
           "minCount": 1,
           "maxCount": 4

@@ -1,14 +1,14 @@
 {
-  "name": "littleadditions:sky_portal_ruined/start_pool",
+  "name": "littleadditions:tent/jungle/start_pool",
 
   "fallback": "minecraft:empty",
 
   "elements": [
     {
 
-      "weight": 1,
+      "weight": 3,
       "element": {
-        "location": "littleadditions:sky_portal_ruined",
+        "location": "littleadditions:tent/jungle",
         "processors": "minecraft:empty",
 
         "projection": "rigid",

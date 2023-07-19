@@ -1,14 +1,14 @@
 {
   "structures": [
     {
-      "structure": "littleadditions:sky_portal_ruined",
-      "weight": 2
+      "structure": "littleadditions:tent_savannah",
+      "weight": 4
     }
   ],
   "placement": {
     "salt": 1642136474,
 
-    "spacing": 30,
+    "spacing": 20,
 
     "separation": 10,
 
