@@ -23,6 +23,8 @@
   "item.littleadditions.emerald_horse_armor": "Emerald Horse Armor",
   "item.littleadditions.pigman_spawn_egg": "Pigman Spawn Egg",
   "item.littleadditions.zombie_pigman_spawn_egg": "Zombie Pigman Spawn Egg",
+  "item.littleadditions.human_spawn_egg": "Human Spawn Egg",
+  "item.littleadditions.ender_trader_spawn_egg": "Ender Trader Spawn Egg",
   "item.littleadditions.gold_and_ruby": "Gold And Ruby",
 
   "block.littleadditions.ruby_block": "Ruby Block",
@@ -49,5 +51,7 @@
   "block.littleadditions.sky_dimension_portal": "Sky Portal",
 
   "entity.littleadditions.pigman":"Pigman",
-  "entity.littleadditions.zombie_pigman":"Zombie Pigman"
+  "entity.littleadditions.zombie_pigman":"Zombie Pigman",
+  "entity.littleadditions.human":"Human",
+  "entity.littleadditions.ender_trader":"Ender Trader"
 }
