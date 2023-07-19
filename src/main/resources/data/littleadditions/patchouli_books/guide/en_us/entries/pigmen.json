@@ -7,7 +7,7 @@
     "type": "patchouli:entity",
     "entity": "littleadditions:pigman",
       "name": "Pigman",
-      "text": "Along with the piglins, there are also pigmen, Intelligent humanoid pigs which are also formidable warriors."
+      "text": "Along with the piglins, there are also pigmen, Intelligent humanoid pigs which are also formidable warriors. Pigmen can also trade a variety of items, and can be found wandering, but also in villages"
      },
     {
       "type": "patchouli:text",
@@ -17,7 +17,13 @@
       "type": "patchouli:entity",
       "entity": "littleadditions:zombie_pigman",
       "name": "Zombie Pigman",
-      "text": "The zombified version of the pigman, it lives in all the nether biomes."
+      "text": "The zombified version of the pigman, it lives in all the nether biomes. They are created when a pigman enters The End or The Nether, and any dimension without skylight"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "littleadditions:ender_trader",
+      "name": "Ender Trader",
+      "text": "Ender Traders are elusive pigmen, which travel between the Overworld and The End, and sell useful items"
     }
   ]
 }
