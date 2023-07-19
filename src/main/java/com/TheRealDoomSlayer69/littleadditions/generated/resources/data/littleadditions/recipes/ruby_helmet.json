@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "RRR",
+    "R R"
+  ],
+  "key": {
+    "R": {
+      "item": "littleadditions:ruby"
+    }
+  },
+  "result": {
+    "item": "littleadditions:ruby_helmet"
+  }
+}
