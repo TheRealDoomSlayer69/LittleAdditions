@@ -18,6 +18,8 @@ import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.goal.*;
 import net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal;
+import net.minecraft.world.entity.ai.navigation.GroundPathNavigation;
+import net.minecraft.world.entity.ai.util.GoalUtils;
 import net.minecraft.world.entity.monster.Zombie;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
@@ -34,6 +36,7 @@ import java.time.temporal.ChronoField;
 import java.util.List;
 import java.util.Random;
 import java.util.UUID;
+import java.util.function.Predicate;
 
 public class ZombiePigmanEntity extends Zombie implements NeutralMob {
     private static final EntityDataAccessor<Boolean> DATA_BABY_ID = SynchedEntityData.defineId(ZombiePigmanEntity.class, EntityDataSerializers.BOOLEAN);
@@ -41,6 +44,7 @@ public class ZombiePigmanEntity extends Zombie implements NeutralMob {
     private static final AttributeModifier SPEED_MODIFIER_BABY = new AttributeModifier(SPEED_MODIFIER_BABY_UUID, "Baby speed boost", (double)0.2F, AttributeModifier.Operation.MULTIPLY_BASE);
 
     private static final float PROBABILITY_OF_SPAWNING_AS_BABY = 0.1F;
+
     public ZombiePigmanEntity(EntityType<? extends ZombiePigmanEntity> pEntityType, Level pLevel) {
         super(pEntityType, pLevel);
 
@@ -90,7 +94,6 @@ public class ZombiePigmanEntity extends Zombie implements NeutralMob {
 
     protected void registerGoals() {
         this.goalSelector.addGoal(1, new FloatGoal(this));
-        this.goalSelector.addGoal(2, new OpenDoorGoal(this, true));
         this.goalSelector.addGoal(2, new ZombieAttackGoal(this, 1.0D, false));
         this.goalSelector.addGoal(3, new LookAtPlayerGoal(this, Player.class, 8.0F));
         this.goalSelector.addGoal(4, new WaterAvoidingRandomStrollGoal(this, 1.0D));
@@ -123,7 +126,6 @@ public class ZombiePigmanEntity extends Zombie implements NeutralMob {
         }
 
 
-        this.setItemSlot(EquipmentSlot.HEAD, ItemStack.EMPTY);
         return groupData;
 
     }
@@ -190,6 +192,7 @@ public class ZombiePigmanEntity extends Zombie implements NeutralMob {
             this.goalSelector.addGoal(4, this.meleeGoal);
         }
     }
+
 
 
     public void readAdditionalSaveData(CompoundTag tag) {

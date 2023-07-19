@@ -27,14 +27,16 @@ public PigmanEntityRenderer(EntityRendererProvider.Context context) {
         this.addLayer(new HumanoidArmorLayer<>(this,
                 new HumanoidModel(context.bakeLayer(ModelLayers.PLAYER_INNER_ARMOR)),
                 new HumanoidModel(context.bakeLayer(ModelLayers.PLAYER_OUTER_ARMOR))));
+
 }
 
 @Override
 public ResourceLocation getTextureLocation(Type entity) {
         String s = ChatFormatting.stripFormatting(entity.getName().getString());
-        if (s != null && "John Pork".equals(s)) {
+        if ("John Pork".equals(s) || "Ιωάννης Χοιρινός".equals(s)) {
                 return JOHN_PORK;
-        } else
-        return TEXTURE;
+        } else {
+                return TEXTURE;
         }
+    }
 }
