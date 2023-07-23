@@ -1,0 +1,17 @@
+{
+  "structures": [
+    {
+      "structure": "littleadditions:pigman_village",
+      "weight": 2
+    }
+  ],
+  "placement": {
+    "salt": 754125125,
+
+    "spacing": 20,
+
+    "separation": 10,
+
+    "type": "minecraft:random_spread"
+  }
+}
