@@ -15,6 +15,7 @@ import net.minecraft.tags.FluidTags;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.damagesource.DamageSource;
+import net.minecraft.world.damagesource.IndirectEntityDamageSource;
 import net.minecraft.world.entity.*;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
@@ -22,6 +23,8 @@ import net.minecraft.world.entity.ai.goal.*;
 import net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal;
 import net.minecraft.world.entity.ai.navigation.GroundPathNavigation;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.projectile.AbstractHurtingProjectile;
+import net.minecraft.world.entity.projectile.ThrownPotion;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.trading.MerchantOffer;
@@ -182,6 +185,36 @@ public class EnderTrader extends AbstractPigman implements NeutralMob {
             return false;
         }
     }
+
+    public boolean hurt(DamageSource pSource, float pAmount) {
+        if (this.isInvulnerableTo(pSource)) {
+            return false;
+        } else if (pSource instanceof IndirectEntityDamageSource) {
+            Entity entity = pSource.getDirectEntity();
+            boolean flag1;
+            if (entity instanceof AbstractHurtingProjectile) {
+                flag1 = this.hurt(pSource, pAmount);
+            } else {
+                flag1 = false;
+            }
+
+            for(int i = 0; i < 64; ++i) {
+                if (this.teleport()) {
+                    return true;
+                }
+            }
+
+            return flag1;
+        } else {
+            boolean flag = super.hurt(pSource, pAmount);
+            if (!this.level.isClientSide() && !(pSource.getEntity() instanceof LivingEntity) && this.random.nextInt(10) != 0) {
+                this.teleport();
+            }
+
+            return flag;
+        }
+    }
+
 
     public float getStandingEyeHeight(Pose p_32154_, EntityDimensions p_32155_) {
         return 1.75F;
