@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:village",
+
+  "config": {
+    "start_pool": "littleadditions:pigman_village/start_pool",
+
+    "size": 2
+  },
+
+  "biomes": "#littleadditions:has_structure/pigman_village",
+
+  "adapt_noise": true,
+
+  "spawn_overrides": {
+    "creature": {
+      "bounding_box": "piece",
+      "spawns": [
+        {
+          "type": "littleadditions:pigman",
+          "weight": 2,
+          "minCount": 1,
+          "maxCount": 4
+        }
+      ]
+    }
+  }
+}
