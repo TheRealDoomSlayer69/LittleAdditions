@@ -1,0 +1,19 @@
+{
+  "name": "littleadditions:pigman_village/start_pool",
+
+  "fallback": "minecraft:empty",
+
+  "elements": [
+    {
+
+      "weight": 6,
+      "element": {
+        "location":"littleadditions:pigman_village",
+        "processors": "minecraft:empty",
+
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}
